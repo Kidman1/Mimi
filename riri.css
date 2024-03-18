@@ -1,0 +1,81 @@
+body {
+  background-color: #f0f0f0;
+}
+header{
+  text-align: center;
+}
+header h1{
+  position: relative;
+  top: 220px;
+  color: #5078ff;
+  text-shadow: 0px 0px 1px #5078ff;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header h2 {
+  position: relative;
+  top: 260px;
+  font-size: 20px;
+  font-weight: 500;
+}
+section{
+  border: 1px solid aliceblue;
+  width: 400px;
+  height: 300px;
+  margin: 200px auto 0;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+section form, section nav{
+  text-align: center;
+  position: relative;
+  top: 80px;
+}
+section form input,
+section form p input,
+section form p button{
+  border: 1px solid #f0f0f0;
+  border-radius: 20px;
+  width: calc(100% - 60px);
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+nav ul a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+nav ul{
+  text-align: center;
+  position: relative;
+  right: 20px;
+  font-weight: 10;
+}
+nav ul span {
+  position: relative;
+  right: 2px;
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-10%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body  {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards, slideIn 0.8s ease forwards;
+}
